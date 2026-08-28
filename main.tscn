@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://2hnd31205put" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bwffoatv4efx4" path="res://cookie.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://diqyhl2qwb1r5" path="res://map.tscn" id="3_h2yge"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,11 +16,6 @@ background_mode = 2
 sky = SubResource("Sky_0xm2m")
 glow_enabled = true
 
-[sub_resource type="BoxMesh" id="BoxMesh_x5sui"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
-
 [node name="Main" type="Node3D" unique_id=1119915553]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=932849002]
@@ -29,17 +25,10 @@ environment = SubResource("Environment_h2yge")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1602521214]
-transform = Transform3D(33.870667, 0, 0, 0, 0.11600429, 0, 0, 0, 23.347378, 0, 0, 0)
-mesh = SubResource("BoxMesh_x5sui")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=835648206]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=883902547]
-shape = SubResource("ConvexPolygonShape3D_1bvp3")
-
 [node name="Player" parent="." unique_id=1734437606 instance=ExtResource("1_ig7tw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0086843, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.445414, 1.0086843, -6.034408)
 
 [node name="Cookie" parent="." unique_id=555782840 instance=ExtResource("2_0xm2m")]
 transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 0, 0.81595576, 6.512189)
+
+[node name="Map" parent="." unique_id=1101451133 instance=ExtResource("3_h2yge")]
