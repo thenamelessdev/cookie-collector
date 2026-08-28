@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwffoatv4efx4"]
+
+[ext_resource type="PackedScene" uid="uid://drq65wv83px3d" path="res://Cookie.glb" id="1_0fkkf"]
+[ext_resource type="Script" uid="uid://577pbw7s2tkg" path="res://cookie.gd" id="1_4g1sd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5sui"]
+
+[node name="Cookie" type="Node3D" unique_id=555782840]
+script = ExtResource("1_4g1sd")
+
+[node name="model" parent="." unique_id=1384336960 instance=ExtResource("1_0fkkf")]
+transform = Transform3D(0.385, 0, 0, 0, -1.6828885e-08, -0.385, 0, 0.385, -1.6828885e-08, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1470949113]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=876791549]
+transform = Transform3D(0.7763977, 0, 0, 0, 0.8042837, 0, 0, 0, 0.44590813, 0, 0, 0)
+shape = SubResource("BoxShape3D_x5sui")

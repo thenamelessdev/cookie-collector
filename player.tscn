@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://2hnd31205put"]
+
+[ext_resource type="Script" uid="uid://5vr4oqtb8cjj" path="res://movement.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cbr6ka5apl5y0" path="res://player_label.gd" id="2_onrkg"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_x5sui"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5sui"]
+
+[node name="Player" type="RigidBody3D" unique_id=1734437606 groups=["Player"]]
+lock_rotation = true
+linear_damp = 1.0
+script = ExtResource("1_4flbx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1945433994]
+transform = Transform3D(0.815, 0, 0, 0, 0.815, 0, 0, 0, 0.815, 0, 1.1563606, 0)
+mesh = SubResource("SphereMesh_x5sui")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=470448942]
+transform = Transform3D(1, 0, 0, 0, 1.6015785, 0, 0, 0, 1, 0, 0.84280324, 0)
+shape = SubResource("BoxShape3D_x5sui")
+
+[node name="CameraHolder" type="Node3D" parent="." unique_id=1175052435]
+
+[node name="Camera3D" type="Camera3D" parent="CameraHolder" unique_id=669896353]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.1563606, 0)
+
+[node name="Label3D" type="Label3D" parent="CameraHolder/Camera3D" unique_id=2085129368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004999925, 0.5406394, -0.858)
+text = "0"
+script = ExtResource("2_onrkg")
