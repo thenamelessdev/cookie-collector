@@ -6,17 +6,17 @@
 script = ExtResource("1_lti8b")
 
 [node name="Label" type="Label" parent="." unique_id=1030652368]
-offset_left = 304.0
-offset_top = 132.0
-offset_right = 713.0
-offset_bottom = 204.0
+offset_left = 365.0
+offset_top = 189.0
+offset_right = 774.0
+offset_bottom = 261.0
 theme_override_font_sizes/font_size = 52
 text = "Cookie Collector"
 
 [node name="Button" type="Button" parent="." unique_id=808616686]
-offset_left = 437.0
-offset_top = 269.0
-offset_right = 606.0
-offset_bottom = 334.0
+offset_left = 498.0
+offset_top = 326.0
+offset_right = 667.0
+offset_bottom = 391.0
 theme_override_font_sizes/font_size = 35
 text = "Play"
