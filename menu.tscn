@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://de3u227jr0d0b"]
+
+[ext_resource type="Script" uid="uid://d20o6ngtib3gq" path="res://menu.gd" id="1_lti8b"]
+
+[node name="Menu" type="Node2D" unique_id=1789782624]
+script = ExtResource("1_lti8b")
+
+[node name="Label" type="Label" parent="." unique_id=1030652368]
+offset_left = 365.0
+offset_top = 189.0
+offset_right = 774.0
+offset_bottom = 261.0
+theme_override_font_sizes/font_size = 52
+text = "Cookie Collector"
+
+[node name="Button" type="Button" parent="." unique_id=808616686]
+offset_left = 498.0
+offset_top = 326.0
+offset_right = 667.0
+offset_bottom = 391.0
+theme_override_font_sizes/font_size = 35
+text = "Play"
