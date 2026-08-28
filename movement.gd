@@ -1,6 +1,7 @@
 extends RigidBody3D
 
 var speed = 15.0
+var jumpForce = 5.0
 
 func _physics_process(_delta: float) -> void:
 	var direction = Vector3.ZERO
@@ -9,6 +10,9 @@ func _physics_process(_delta: float) -> void:
 	if direction != Vector3.ZERO:
 		var yaw_basis = Basis(Vector3.UP, $CameraHolder.rotation.y)
 		apply_central_force(yaw_basis * direction * speed)
+		
+	if Input.is_action_just_pressed("move_jump") and linear_velocity.y == 0:
+		linear_velocity.y = jumpForce
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
