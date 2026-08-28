@@ -29,6 +29,18 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.445414, 1.0086843, -6.034408)
 
 [node name="Cookie" parent="." unique_id=555782840 instance=ExtResource("2_0xm2m")]
-transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 0, 0.81595576, 6.512189)
+transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 22.259592, 0.81595576, 5.785617)
+
+[node name="Cookie2" parent="." unique_id=266507713 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 34.805614, 2.5000606, -3.4457808)
+
+[node name="Cookie3" parent="." unique_id=1989470492 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 9.825623, 0.36796117, -3.4457808)
+
+[node name="Cookie4" parent="." unique_id=698913693 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 2.6953983, 0.36796117, -9.886584)
+
+[node name="Cookie5" parent="." unique_id=1049582441 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-0.9824723, 0, 0.18640853, 0, 1, 0, -0.18640853, 0, -0.9824723, 9.596407, 0.36796117, -16.961788)
 
 [node name="Map" parent="." unique_id=1101451133 instance=ExtResource("3_h2yge")]
