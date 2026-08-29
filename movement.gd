@@ -11,7 +11,7 @@ func _physics_process(_delta: float) -> void:
 		var yaw_basis = Basis(Vector3.UP, $CameraHolder.rotation.y)
 		apply_central_force(yaw_basis * direction * speed)
 		
-	if Input.is_action_just_pressed("move_jump") and linear_velocity.y == 0:
+	if Input.is_action_just_pressed("move_jump") and abs(linear_velocity.y) < 0.1:
 		linear_velocity.y = jumpForce
 
 func _unhandled_input(event: InputEvent) -> void:
