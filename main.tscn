@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c5ytaal7b51ro"]
 
+[ext_resource type="Script" uid="uid://dr5i4v5wumvat" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://2hnd31205put" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bwffoatv4efx4" path="res://cookie.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://diqyhl2qwb1r5" path="res://map.tscn" id="3_h2yge"]
@@ -17,6 +18,7 @@ sky = SubResource("Sky_0xm2m")
 glow_enabled = true
 
 [node name="Main" type="Node3D" unique_id=1119915553]
+script = ExtResource("1_1bvp3")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=932849002]
 environment = SubResource("Environment_h2yge")
